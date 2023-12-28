@@ -1,0 +1,41 @@
+version: '2'
+services:
+  lighttpd:
+    container_name: lighttpd
+    image: dcoon/lighttpd
+    ports:
+      - '80:80'
+    volumes:
+      - lighttpd.conf:/etc/lighttpd
+    restart: unless-stopped
+  calibre-web:
+    image: dcoon/calibreweb
+    container_name: calibre-web
+    volumes:
+      - calibre-web.conf:/config
+      - /mnt/library/Books:/books
+    ports:
+      - '8083:8083'
+    restart: unless-stopped
+  minidlna:
+    container_name: minidlna
+    image: vladgh/minidlna
+    network_mode: host
+    volumes:
+      - minidlna.data:/var/minidlna
+      - /mnt/library/Music/Music-david:/media/music
+      - /mnt/library/Videos/Movies:/media/movies
+    environment:
+      - MINIDLNA_DB_DIR=/var/minidlna/cache
+      - MINIDLNA_MEDIA_DIR_1=A,/media/music
+      - MINIDLNA_MEDIA_DIR_2=V,/media/movies
+      - MINIDLNA_FRIENDLY_NAME=HarmonyLibrary
+      - MINIDLNA_INOTIFY=no
+    restart: unless-stopped
+volumes:
+  lighttpd.conf:
+    external: true
+  calibre-web.conf:
+    external: true
+  minidlna.data:
+    external: true
