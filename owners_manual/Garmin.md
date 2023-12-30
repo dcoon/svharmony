@@ -28,6 +28,8 @@ subgraph Helm
 	VHF --- VHFRemote["GHS11 VHF Remote"]
 end
 
+InstrumentsBreaker:::Power --- Power
+
 subgraph Settee
 	SalonN2K[<font color=white>Settee N2K]:::N2K
 	SalonN2K --- AIS["AIS900"]
