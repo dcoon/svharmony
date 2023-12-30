@@ -37,14 +37,19 @@ subgraph Settee
 	VHF ---|LMR400UF| AIS["AIS900"] ---|LMR400UF| Antenna
 end
 
+subgraph AftCabin
+	StarboardN2K[<font color=white>Aft Cabin N2K]:::N2K
+end
+
 subgraph StarboardTransom
 	CCU ---|CCU Cable| ECU
 	ECU ---|Drive| Octopus
 	ECU ---|Feedback| RudderSensor
+	StarboardN2K --- DST810
 end
 
-StarboardN2K[<font color=white>Aft Cabin N2K]:::N2K
-StarboardN2K --- DST810
+
+
 
 T1["Terminator"] === SalonN2K ===|Backbone| CockpitN2K ===|Backbone| StarboardN2K === T2["Terminator"]
 
