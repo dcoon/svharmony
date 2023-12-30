@@ -1,7 +1,7 @@
 ## Batteries
 
 ```mermaid
-flowchart-elk
+flowchart-elk LR
   
 Victron --- OrionDCDC
 OrionDCDC ---|30A| AGM
@@ -20,6 +20,7 @@ AGM --- Starter --- Engine
   Engine --- Relay -- Wakespeed
   Wakespeed --- Alternator ---|150A| Victron
 end
+
 ```
   
 Harmony has 2 power buses each with different battery chemistries.
