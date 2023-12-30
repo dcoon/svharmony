@@ -2,7 +2,9 @@
 
 | Specification |  |
 | ---- | ---- |
-| MMSi |  |
+| MMSI | 368008520 |
+| Call Sign | WDJ7624 |
+| Wifi | SVHARMONYINSTRUMENTS |
 |  |  |
 
 ```mermaid
