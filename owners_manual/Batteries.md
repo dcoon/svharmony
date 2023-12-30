@@ -9,7 +9,7 @@ OrionDCDC ---|30A| AGM
   
 subgraph house["House Batteries
 LiFePO4"]
-Battery1 ---|500A| Victron
+  Battery1 ---|500A| Victron
   Battery2 ---|500A| Victron
   Battery1 --- Battery2
 end
@@ -17,7 +17,7 @@ Battery2 ---|VE.BUS| Victron
 
 subgraph engine["Engines
 SLA AGM"]
-AGM --- Starter --- Engine
+  AGM --- Starter --- Engine
   Engine --- Relay -- Wakespeed
   Wakespeed --- Alternator ---|150A| Victron
 end
