@@ -12,11 +12,16 @@ subgraph Mast
     Windvane
 end
 
+RadarBreaker:::Power --- Radar
+
 subgraph Helm
+	HelmFuseBlock:::Power
 	MFD["GPSMAP 8417 MFD"]:::Garmin
 	MFD ---|ETH| Radar
-	CockpitN2K[<font color=white>Helm N2K]:::N2K
-	Power[/N2K Power/]:::Power ---|10A| CockpitN2K
+	CockpitN2K[Helm N2K]:::N2K
+	HelmFuseBlock ---|10A| CockpitN2K
+	HelmFuseBlock --- MFD
+	HelmFuseBlock --- CardReader
 	CockpitN2K --- MFD
 	CockpitN2K --- GMI201["GMI20"]
 	CockpitN2K --- GMI202["GMI20"]
@@ -28,7 +33,9 @@ subgraph Helm
 	VHF --- VHFRemote["GHS11 VHF Remote"]
 end
 
-InstrumentsBreaker:::Power --- Power
+InstrumentsBreaker:::Power --- HelmFuseBlock
+RadioBreaker:::Power --- Radio
+VHFBreaker:::Power --- VHF
 
 subgraph Settee
 	SalonN2K[<font color=white>Settee N2K]:::N2K
@@ -38,6 +45,8 @@ subgraph Settee
 	SalonN2K --- CCU
 	VHF ---|LMR400UF| AIS["AIS900"] ---|LMR400UF| Antenna
 end
+
+AISBreaker:::Power --- AIS
 
 subgraph AftCabin
 	StarboardN2K[<font color=white>Aft Cabin N2K]:::N2K
@@ -49,6 +58,8 @@ subgraph StarboardTransom
 	ECU ---|Feedback| RudderSensor
 	StarboardN2K --- DST810
 end
+
+AutopilotBreaker:::Power --- Octopus
 
 
 
