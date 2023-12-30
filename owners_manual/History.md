@@ -1,0 +1,99 @@
+## History
+### Build
+Harmony was built in 2007 by Custom Marine in Knysna, RSA. She was meant to be its boat show centerpiece so was built to a high standard. Detailed construction plans can be obtained from Schionning Designs. The hull and decks are made from DuFLEX Balsa and strip planked red cedar covered in fiberglass and West Systems epoxy. Carbon reinforcements are placed in high stress areas. This makes for a very strong, stiff, and lightweight hull. DuFLEX Balsa panels are manufactured with epoxy "dams" every 4" in the balsa which limits moisture migration in the event of a penetration. The superstructure is a mix of DuFLEX, foam, and honeycomb core epoxy panels. The daggerboards are red cedar core, carbon fiber, and epoxy.  The rudders are foam, fiberglass, and epoxy over a stainless steel frame. 
+
+Custom Marine experienced financial trouble after producing several hulls but the three partners still build quality catamarans in Knysna. James Turner owns Vision Yachts and builds the Vision 444. Julian Kneale owns Current Marine and continues to build Schionning catamarans. Don Tait owns Tait Marine, a prominent marine repair facility in Knysna. All three were consulted during the 2017 refit.
+### Repair
+Below is a list of major repairs and upgrades to date. It does not include standard maintenance items or typical minor repairs.
+
+- 2007 - 2017 previous owner
+	- Launched and moored in Knysna, RSA. 
+- 2017  - Purchased by current owners
+	- New Salon Windows
+	- New Garmin and MasterVolt electronics
+	- New LiFePO4 house and AGM start batteries
+	- Engine Rebuilds (engines had ~ 100 hours but had sat largely unused for 10 years)
+	- Upgraded steering w/ Drag Links, new quadrant and spectra
+	- New pumps (bilge, fresh water, toilet inlet, deckwash) and hoses
+	- New solar panels
+	- New Skin Fittings
+	- New Non Skid
+	- Misc paint and fiberglass repairs
+	- New daggerboards
+	- New running rigging
+	- New spinnaker
+	- New ground tackle
+	- New tender and outboard
+	- Bottom paint
+- 2017 - Cape Town, RSA
+	- New autopilot drive unit. Original rebuilt and kept as spare.
+- 2018 - Richard's Bay, RSA
+	- Rebuilt windlass
+- 2018 - Knysna, RSA
+	- Replace starboard rudder
+- 2019 - Hauled at Royal Cape Yacht Club, Cape Town
+	- Replace starboard rudder bearings
+	- Rebed hatches
+	- New main, jib, and code sail
+	- New main halyard and spin sheets
+	- New life raft
+	- Bottom paint
+- 2020 - Washington DC
+	- Rebuild port gearbox
+- 2021 - Hauled at Shearwater Marine in Ft Pierce, FL
+	- Repair hairline crack in port daggerboard trunk
+	- Repair small star crack in starboard bow
+	- Replace aft cutlass bearings
+	- Replace shafts and starboard PSS shaft seal
+	- New code sail (warranty replacement)
+	- New solar panels
+	- Bottom paint
+- 2022 - Hauled at St Augustine Marine Center, FL
+	- New shafts, couplers, & props
+	- New refrigerator
+	- Lightning strike
+	- Complete rewire and electrical system redesign
+	- New Garmin & Victron electronics
+	- Full diagnostics on BlueNova batteries and remaining equipment
+	- Rebuilt alternators and new Wakespeed WS500 regulators
+	- Rebed front salon windows
+	- New solar panels
+	- New bilge pumps
+	- New start batteries
+	- Replaced port PSS shaft seal
+	- New engine mounts, exhaust elbows, valve adjustment, alignment
+	- New standing rigging and mast rebuild
+	- New skin fittings with reinforced hull plates and TruDesign valves
+	- New EZ2CY dodger
+	- New salon and cockpit cushions
+	- Bottom paint
+- 2023 - St Augustine, FL
+	- Misc fiberglass and paint repairs
+### Travels
+- 2007 - 2017 previous owner
+	- Knysna to Cape Town
+- 2017 - current owners
+	- Knysna to Cape Town
+	- Namibia
+- 2018
+	- Cape Town to Richard's Bay, RSA
+	- Madagascar
+	- Mozambique 
+- 2019
+	- Cape Town to Grenada
+	- St Helena
+	- Brazil
+- 2020
+	- Grenada to USVI
+	- USVI to Beaufort, SC via Bahamas
+	- Chesapeake
+	- Washington DC
+- 2021
+	- Bahamas
+	- Charleston, SC
+	- Florida
+- 2022
+	- Bahamas
+- 2023
+	- New England
+	- St Augustine, FL 
