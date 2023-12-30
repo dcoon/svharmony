@@ -2,7 +2,7 @@
 
 ```mermaid
 
-flowchart-elk LR
+flowchart-elk
   
 Victron --- OrionDCDC
 OrionDCDC ---|30A| AGM
@@ -18,7 +18,7 @@ Battery2 ---|VE.BUS| Victron
 subgraph engine["Engines
 SLA AGM"]
   AGM --- Starter --- Engine
-  Engine --- Relay -- Wakespeed
+  Engine --- Relay --- Wakespeed
   Wakespeed --- Alternator ---|150A| Victron
 end
 
