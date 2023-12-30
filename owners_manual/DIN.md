@@ -2,7 +2,7 @@
 
 ![DIN](DIN.png)
 
-|DIN Position                                |Circuit Name           |Breaker #|      |DIN Position                                |Circuit Name               |Breaker #|      |DIN Position                                      |Circuit Name|
+|Position                                |Circuit Name           |Breaker #|      |Position                                |Circuit Name               |Breaker #|      |Position                                      |Circuit Name|
 |--------------------------------------------|-----------------------|---------|------|--------------------------------------------|---------------------------|---------|------|--------------------------------------------------|------------|
 |                                            |AC                     |         |      |                                            |DC                         |         |      |MIXED SIGNAL                                      |            |
 |1                                           |Port Cabin Outlets     |3        |      |                                            |Port Light Spare           |         |      |                                                  |Router      |
