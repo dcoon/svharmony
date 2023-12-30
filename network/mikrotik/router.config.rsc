@@ -17,11 +17,7 @@ add comment=defconf name=LAN
 /interface wireless security-profiles
 set [ find default=yes ] authentication-types=wpa2-psk,wpa2-eap mode=\
     dynamic-keys supplicant-identity=MikroTik wpa2-pre-shared-key=\
-    "I Love Harmony!"
-add authentication-types=wpa2-psk,wpa2-eap mode=dynamic-keys name=DWilson \
-    supplicant-identity="" wpa2-pre-shared-key=122@SeaS
-add authentication-types=wpa2-psk mode=dynamic-keys name=svHarmony \
-    supplicant-identity=MikroTik wpa2-pre-shared-key="I Love Harmony!"
+    "secret"
 /interface wireless
 set [ find default-name=wlan2 ] band=5ghz-a/n/ac channel-width=\
     20/40/80mhz-eeCe country="united states" disabled=no distance=indoors \
