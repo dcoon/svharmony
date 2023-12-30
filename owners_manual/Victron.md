@@ -25,5 +25,10 @@ Cerbo ---|Ethernet| Router
 Cerbo ---|USB| GXTank:::Victron
 GXTank --- Water["Water PT/SB"]
 GXTank --- Fuel["Fuel PT/SB"]
+
+subgraph engines
+    LynxDistro3 --- OrionDCDC
+end
+
 ```
  
