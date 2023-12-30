@@ -17,7 +17,7 @@ Battery1 ---|VE.BMS| Battery2 ---|VE.BMS| Cerbo:::Victron
 LynxDistro1 ---|RJ11| LynxDistro2 ---|RJ11| Cerbo
 Touch50:::Victron ---|HDMI| Cerbo
 Touch50:::Victron ---|USB| Cerbo
-Cerbo ---|VE.Bus| Quattro:::Victron
+Cerbo ---|VE.Bus| Quattro:::Victron ---|230VAC| IsolationTransformer:::Victron --- ShorePower
 Cerbo ---|VE.Direct| MPPT1:::Victron --- SolarPT
 Cerbo ---|VE.Direct| MPPT2:::Victron --- SolarSB
 LynxShunt ---|VE.CAN| Cerbo ---|VE.CAN| WS500SB ---|WS.CAN| WS500PT ---|WS.CAN| VECANT2{{"Term"}}
@@ -27,7 +27,8 @@ GXTank --- Water["Water PT/SB"]
 GXTank --- Fuel["Fuel PT/SB"]
 
 subgraph engines
-    LynxDistro3 --- OrionDCDC
+    LynxDistro3 --- OrionDCDC["Orion DCDC
+    Bluetooth Only"]
 end
 
 ```
