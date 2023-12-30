@@ -15,7 +15,7 @@ LiFePO4"]
 end
 Battery2 ---|VE.BUS| Victron
 
-subgraph engine["Engines
+subgraph engine["Engine Start Batteries
 SLA AGM"]
   AGM --- Starter --- Engine
   Engine --- Relay --- Wakespeed
