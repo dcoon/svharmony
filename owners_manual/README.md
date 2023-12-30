@@ -10,7 +10,7 @@ author: David Coon
 # Electrical
 - [DC](DCSystemOverview.md)
 - [Batteries](Batteries.md)
-- [PowerDistribution](PowerDistribution.md)
+- [Power Distribution](PowerDistribution.md)
 - [Engines Start and Charge](EnginesStartAndCharge.md)
 - [Garmin](Garmin.md)
 - [Victron](Victron.md)

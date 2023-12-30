@@ -20,7 +20,7 @@
   
   Fuse1-3[120A] --- Winch
   
-  Fuse1-4[300A]
+  Fuse1-4[300A] --- ChargerFuse
   
   end
   
@@ -32,7 +32,7 @@
   
   Fuse2-3[40A] --- Watermaker
   
-  Fuse2-4[400A]
+  Fuse2-4[400A] --- Distro3Fuse
   
   end
   
@@ -42,7 +42,7 @@
   
   end
   
-  Fuse1-4 ---|Charger| Quattro
+  ChargerFuse --- Quattro
   
   subgraph DistroNavDesk["Lynx Distro 3 (Under NavDesk)"]
   
@@ -54,7 +54,7 @@
   
   end
   
-  Fuse2-4 --- DistroNavDesk
+  Distro3Fuse --- DistroNavDesk
   
   subgraph PortEngine
   
