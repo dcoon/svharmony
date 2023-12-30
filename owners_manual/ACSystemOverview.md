@@ -43,7 +43,7 @@ The Quattro provides two AC outputs, AC1 and AC2. AC1 is powered by either shore
 
 A BEP millennium AC distribution panel provides AC mains breaker, reverse polarity indicator, and 12 breakers for device circuits. A key to breaker fuse ratings and labels is in the appendices.
 ### Outlets
-All outlets are Type D three prong with on/off switches in each receptacle, the standard in RSA. The are over and residual current fault protected at the DIN rail. There is a residual current tester located in the starboard lounge locker.
+All outlets are Type D three prong with on/off switches in each receptacle, the standard in RSA. They are over and residual current fault protected at the DIN rail. There is a residual current tester located in the starboard lounge locker.
 ### Generator
 Harmony originally came fitted with a generator, a Fischer Panda 5000i PMS 4kW diesel unit. It was removed to save weight and maintenance. The mounting location in the port engine room and AC generator circuit were left intact to make it easy to refit if required.
 
