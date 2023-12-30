@@ -1,9 +1,7 @@
 ## Victron
-Batteries and Victron components are controlled by the Cerbo GX and Blue Nova BMS. The Cerbo uses DVCC  to allow the BMS to control (dis)charge voltage and current. Battery measurements (SoC, SoH, V, I, Temp, etc) are provided by the BMS. 
+The Batteries and Victron components are controlled by the Cerbo GX and Blue Nova BMS. The Cerbo uses DVCC to allow the BMS to control (dis)charge voltage and current. Battery measurements (SoC, SoH, V, I, Temp, etc) are provided by the BMS. 
 
-The LynxShunt is ignored and was included to provide the Class T fusing and a backup shunt in case of BMS failure.
-
-The LynxDistro modules use Mega style fuses. Spares are located in the starboard bow locker. A blown fuse will show an alarm on the Touch display.
+The LynxPower has no monitoring circutry and only serves to combine the high current cables of both batteries. The LynxShunt connects to the Cerbo via VE.CAN. It reports it's measurements but is otherwise disable. The first 2 LynxDistro units connect to the Cerbo via RJ11 serial cable. More information is provided in the DC Power Distribution section.
 
 The Quattro charge  profile is controlled by DVCC. It is configured in AES energy saving mode. If inverter load is very light, it will turn on and off every few seconds. The AC breaker panel leds will blink. 
 
