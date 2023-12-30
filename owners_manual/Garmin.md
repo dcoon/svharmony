@@ -1,4 +1,10 @@
 ## Garmin
+
+| Specification |  |
+| ---- | ---- |
+| MMSi |  |
+|  |  |
+
 ```mermaid
 
 flowchart-elk TB
@@ -12,7 +18,7 @@ subgraph Mast
     Windvane
 end
 
-RadarBreaker:::Power --- Radar
+RadarBreaker:::Power ---|30A| Radar
 
 subgraph Helm
 	HelmFuseBlock:::Power
@@ -20,8 +26,8 @@ subgraph Helm
 	MFD ---|ETH| Radar
 	CockpitN2K[Helm N2K]:::N2K
 	HelmFuseBlock ---|10A| CockpitN2K
-	HelmFuseBlock --- MFD
-	HelmFuseBlock --- CardReader
+	HelmFuseBlock ---|10A| MFD
+	HelmFuseBlock ---|5A| CardReader
 	CockpitN2K --- MFD
 	CockpitN2K --- GMI201["GMI20"]
 	CockpitN2K --- GMI202["GMI20"]
@@ -33,9 +39,9 @@ subgraph Helm
 	VHF --- VHFRemote["GHS11 VHF Remote"]
 end
 
-InstrumentsBreaker:::Power --- HelmFuseBlock
-RadioBreaker:::Power --- Radio
-VHFBreaker:::Power --- VHF
+InstrumentsBreaker:::Power ---|20A| HelmFuseBlock
+RadioBreaker:::Power ---|20A| Radio
+VHFBreaker:::Power ---|30A| VHF
 
 subgraph Settee
 	SalonN2K[<font color=white>Settee N2K]:::N2K
@@ -46,7 +52,7 @@ subgraph Settee
 	VHF ---|LMR400UF| AIS["AIS900"] ---|LMR400UF| Antenna
 end
 
-AISBreaker:::Power --- AIS
+AISBreaker:::Power ---|20A| AIS
 
 subgraph AftCabin
 	StarboardN2K[<font color=white>Aft Cabin N2K]:::N2K
@@ -59,7 +65,7 @@ subgraph StarboardTransom
 	StarboardN2K --- DST810
 end
 
-AutopilotBreaker:::Power --- Octopus
+AutopilotBreaker:::Power ---|20A| Octopus
 
 
 
@@ -68,3 +74,4 @@ T1["Terminator"] === SalonN2K ===|Backbone| CockpitN2K ===|Backbone| StarboardN2
 
 
 ```
+
