@@ -3,7 +3,8 @@ created: 2022-07-08T15:10:51-04:00
 title: Harmony Owners Manual
 author: David Coon
 ---
-- ![Preface](Preface.md)
+- ![Cover](Cover.md)
+- [Preface](Preface.md)
 # Overview
 - [Specifications](Specifications.md)
 - [Safety](Safety.md)
