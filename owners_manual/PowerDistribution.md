@@ -6,9 +6,9 @@
   
   subgraph HouseBank
   
-  Battery1["LiFePO4 1"] ---|500A| LynxPower
+  Battery1["Battery 1"] ---|500A| LynxPower
   
-  Battery2["LiFePO4 2"] ---|500A| LynxPower
+  Battery2["Battery 2"] ---|500A| LynxPower
   
   end
   
@@ -58,7 +58,7 @@
   
   subgraph PortEngine
   
-  PortPowerBus ---|40A| OrionDCDC --- PortStartBattery["AGM Start Battery"]
+  PortPowerBus ---|40A| OrionDCDC --- PortStartBattery["Start Battery"]
   
   PortPowerBus ---|40A| EngineOnRelay ---|5A| WS500
   
