@@ -6,6 +6,7 @@
 | Call Sign | WDJ7624 |
 | Wifi | SVHARMONYINSTRUMENTS |
 |  |  |
+The N2K backbone runs from behind the settee, through the DIN cabinet, up to the cabinet behind the chartplotter, then down to the aft cabin. It is powered behind the chartplotter via the breaker labelled Instruments and a 10A ATC fuse behind the chartplotter labelled N2K.
 
 ```mermaid
 
@@ -27,7 +28,8 @@ subgraph Helm
 	MFD["GPSMAP 8417 MFD"]:::Garmin
 	MFD ---|ETH| Radar
 	CockpitN2K[Helm N2K]:::N2K
-	HelmFuseBlock ---|10A| CockpitN2K
+	HelmFuseBlock ---|"10A
+	N2K Power"| CockpitN2K
 	HelmFuseBlock ---|10A| MFD
 	HelmFuseBlock ---|5A| CardReader
 	CockpitN2K --- MFD
