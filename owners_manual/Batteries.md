@@ -1,26 +1,26 @@
 ## Batteries
 
 ```mermaid
-  flowchart-elk LR
+flowchart-elk
   
-  Victron --- OrionDCDC
-  OrionDCDC ---|30A| AGM
+Victron --- OrionDCDC
+OrionDCDC ---|30A| AGM
   
-  subgraph house["House Batteries
-  LiFePO4"]
-	Battery1 ---|500A| Victron
-	  Battery2 ---|500A| Victron
-	  Battery1 --- Battery2
-  end
-  Battery2 ---|VE.BUS| Victron
-  
-  subgraph engine["Engines
-  SLA AGM"]
-	AGM --- Starter --- Engine
-	  Engine --- Relay -- Wakespeed
-	  Wakespeed --- Alternator ---|150A| Victron
-  end
-  ```
+subgraph house["House Batteries
+LiFePO4"]
+Battery1 ---|500A| Victron
+  Battery2 ---|500A| Victron
+  Battery1 --- Battery2
+end
+Battery2 ---|VE.BUS| Victron
+
+subgraph engine["Engines
+SLA AGM"]
+AGM --- Starter --- Engine
+  Engine --- Relay -- Wakespeed
+  Wakespeed --- Alternator ---|150A| Victron
+end
+```
   
 Harmony has 2 power buses each with different battery chemistries.
 ### House Batteries
