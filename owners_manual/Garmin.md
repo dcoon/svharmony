@@ -26,7 +26,6 @@ subgraph Helm
 	CockpitN2K --- Radio --- AMFMAntenna["Antenna"]
 	CockpitN2K --- VHF
 	VHF --- VHFRemote["GHS11 VHF Remote"]
-	VHF ---|LMR400UF| AIS["AIS900"] ---|LMR400UF| Antenna
 end
 
 subgraph Settee
@@ -35,6 +34,7 @@ subgraph Settee
 	AIS --- GPSAntenna
 	SalonN2K --- GND10:::Garmin ---|Nexus| Windvane
 	SalonN2K --- CCU
+	VHF ---|LMR400UF| AIS["AIS900"] ---|LMR400UF| Antenna
 end
 
 subgraph StarboardTransom
