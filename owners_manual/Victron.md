@@ -13,22 +13,17 @@ Battery1 ---|500A| LynxPower
 Battery2 ---|500A| LynxPower
 
 Battery1 ---|VE.BMS| Battery2 ---|VE.BMS| Cerbo:::Victron
+
 LynxDistro1 ---|RJ11| LynxDistro2 ---|RJ11| Cerbo
 Touch50:::Victron ---|HDMI| Cerbo
 Touch50:::Victron ---|USB| Cerbo
 Cerbo ---|VE.Bus| Quattro:::Victron
 Cerbo ---|VE.Direct| MPPT1:::Victron --- SolarPT
 Cerbo ---|VE.Direct| MPPT2:::Victron --- SolarSB
-Cerbo ---|USB| Bluetooth[/Bluetooth/]
-LynxShunt --- Cerbo ---|VE.CAN| WS500SB ---|WS.CAN| WS500PT ---|WS.CAN| VECANT2{{"Term"}}
+LynxShunt ---|VE.CAN| Cerbo ---|VE.CAN| WS500SB ---|WS.CAN| WS500PT ---|WS.CAN| VECANT2{{"Term"}}
 Cerbo ---|Ethernet| Router
-Cerbo ---|USB| Tank4:::Victron
-Tank4 --- Water["Water PT/SB"]
-Tank4 --- Fuel["Fuel PT/SB"]
-subgraph BluetoothNetwork["Bluetooth"]
-	Bluetooth --- OrionDCDCPT["Orion DCDC PT"]:::Victron
-	Bluetooth --- OrionDCDCSB["Orion DCDC SB"]:::Victron
-	Bluetooth --- Ruuvi
-end
+Cerbo ---|USB| GXTank:::Victron
+GXTank --- Water["Water PT/SB"]
+GXTank --- Fuel["Fuel PT/SB"]
 ```
  
