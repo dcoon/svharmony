@@ -21,12 +21,18 @@ end
 Ethernet ---|192.168.3.5| ha
 
 
-subgraph MFD["Garmin"]
+subgraph MFD["Garmin MFD"]
 	svHARMONYINSTRUMENTS["svHARMONYINST (2.4GHz)"]
 end
-svHARMONYINSTRUMENTS --- ActiveCaptain
+
+subgraph mobile["Mobile Device"]
+	ActiveCaptain --- svHARMONYINSTRUMENTS
+	Browser
+end
+Router ---|192.168.3.20-254 WiFi| mobile
 
 ha ---|zigbee| dimmers["Light Dimmers"]
+ha ---|ble| sensors["Barometer & Water Leak Sensors"]
 svHarmony24 ---|192.168.3.x| lights["Light Controllers"]
 
 
