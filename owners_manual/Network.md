@@ -72,17 +72,17 @@ subgraph odroid["odroid n2"]
 	end
 end
 
-subgraph MFD["Garmin"]
+subgraph MFD["Garmin MFD"]
 	N2K
 	WiFi
 end
 
 
 zigbee ---|zigbee| dimmers["Light Dimmers"]
-shelly ---|wifi| lights
+shelly ---|wifi| lights["Lights"]
 
-ble ---|BLE| Ruuvi
-ble ---|BLE| Govee
+ble ---|ble| ruuvi["Barometer (Ruuvi)"]
+ble ---|ble| govee["Water Leak Sensors (Govee)"]
 
 subgraph mobile["Mobile Device"]
 	browser --- haui
