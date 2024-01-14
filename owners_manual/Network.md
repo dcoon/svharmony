@@ -60,9 +60,12 @@ Ethernet ---|192.168.3.4| cerbo
 subgraph odroid["odroid n2"]
 	subgraph haos["Home Assistant OS"]
 		subgraph ha["Home Assistant"]
-			shelly
-			LightBlueprint
-			
+			Dashboard
+			subgraph integrations
+				shelly
+				zigbee
+				LightBlueprint
+			end
 		end
 	end
 end
