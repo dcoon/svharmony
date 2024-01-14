@@ -51,37 +51,44 @@ flowchart-elk
 
 subgraph cerbo
 	subgraph venus["Venus OS"]
-		VictronUI
+		vui["VictronUI"]
 	end
 end
-Ethernet ---|192.168.3.4| cerbo
-
+venus --- vrm["Victron Cloud (VRM)"]
 
 subgraph odroid["odroid n2"]
 	subgraph haos["Home Assistant OS"]
 		subgraph ha["Home Assistant"]
-			Dashboard
+			haui["HomeAssistantUI"]
 			subgraph integrations
 				shelly
 				zigbee
+				ble
 				LightBlueprint
 			end
 		end
 	end
 end
-Ethernet ---|192.168.3.5| ha
-
 
 subgraph MFD["Garmin"]
 	N2K
+	WiFi
 end
-svHARMONYINSTRUMENTS --- ActiveCaptain
 
-ha ---|zigbee| dimmers["Light Dimmers"]
-svHarmony24 ---|192.168.3.x| lights["Light Controllers"]
-shelly --- lights
 
-ha ---|BLE| Ruuvi
-ha ---|BLE| Govee
+zigbee ---|zigbee| dimmers["Light Dimmers"]
+shelly ---|wifi| lights
+
+ble ---|BLE| Ruuvi
+ble ---|BLE| Govee
+
+subgraph mobile["Mobile Device"]
+	browser --- haui
+	browser --- vui
+
+	ac["Active Captain"] --- WiFi
+end
+
+browser --- vrm
 
 ```
