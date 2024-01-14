@@ -32,7 +32,7 @@
   
   Fuse2-3[40A] --- Watermaker
   
-  Fuse2-4[400A] --- Distro3Fuse
+  Fuse2-4[250A] --- Distro3Fuse
   
   end
   
