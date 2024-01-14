@@ -64,7 +64,9 @@ subgraph odroid["odroid n2"]
 				shelly
 				zigbee
 				ble
-				LightBlueprint
+			end
+			subgraph blueprints
+				lightautomation["Turn On Lights When Dimmer Pressed"]
 			end
 		end
 	end
