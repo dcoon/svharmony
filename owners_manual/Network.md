@@ -50,7 +50,7 @@ svHarmony24 ---|192.168.3.x| lights["Light Controllers"]
 | Starboard Aft Lights | Shelly | D9424F (14238287) | 192.168.3.14 | 58:BF:25:D9:42:4F | Aft Cabin |
 | Salon Lights | Shelly | 16E69F (1500831) | 192.168.3.15 | 44:17:93:16:E6:9F | Salon Behind Radio |
 | DHCP Pool |  |  | 192.168.3.20-254 |  |  |
-## Software
+## Software (As Is)
 
 ```mermaid
 flowchart-elk
@@ -91,7 +91,64 @@ ble ---|ble| ruuvi["Barometer (Ruuvi)"]
 ble ---|ble| govee["Water Leak Sensors (Govee)"]
 
 subgraph mobile["Mobile Device"]
-	browser --- haui
+	browser["Browser"] --- haui
+	browser --- vui
+
+	ac["Active Captain"] --- WiFi
+end
+
+browser --- vrm
+
+```
+
+## Software Option A
+
+```mermaid
+flowchart-elk
+
+subgraph cerbo
+	subgraph venus["Venus OS"]
+		vui["VictronUI"]
+		VE.MQTT
+	end
+end
+venus --- vrm["Victron Cloud (VRM)"]
+
+subgraph odroid["odroid n2"]
+	subgraph haos["Home Assistant OS"]
+		subgraph ha["Home Assistant"]
+			haui["HomeAssistantUI"]
+			subgraph integrations
+				shelly
+				zigbee
+				ble
+			end
+			subgraph blueprints
+				lightautomation["Turn On Lights When Dimmer Pressed"]
+			end
+		end
+		subgraph signalk
+		end
+		subgraph HA.MQTT
+		end
+		VE.MQTT ---|mqttbridge| HA.MQTT
+	end
+end
+
+subgraph MFD["Garmin MFD"]
+	N2K
+	WiFi
+end
+
+
+zigbee ---|zigbee| dimmers["Light Dimmers"]
+shelly ---|wifi| lights["Lights"]
+
+ble ---|ble| ruuvi["Barometer (Ruuvi)"]
+ble ---|ble| govee["Water Leak Sensors (Govee)"]
+
+subgraph mobile["Mobile Device"]
+	browser["Browser"] --- haui
 	browser --- vui
 
 	ac["Active Captain"] --- WiFi
