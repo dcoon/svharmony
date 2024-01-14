@@ -3,37 +3,36 @@
 flowchart-elk
 
 subgraph Router
-svHarmony24["svHarmony (2.4GHz)"]
-svHarmony["svHarmony (5GHz)"]
+	svHarmony24["svHarmony (2.4GHz)"]
+	svHarmony["svHarmony (5GHz)"]
+	Ethernet
 end
+WAN ---|PoE Port5| Router
 
 subgraph Cerbo
-	MQTT
-	VECAN
-	BLE --- Ruuvi["Barometer"]
+	VictronUI
 end
-Cerbo ---|192.168.3.4 Eth| Router
+Ethernet ---|192.168.3.4| Cerbo
 
 
-subgraph RaspberryPi
-	Zigbee2MQTT 
-	SignalK
-	NodeRed
+subgraph ha["odroid n2"]
+	HomeAssistant
 end
-Router ---|192.168.3.5 Eth| RaspberryPi
+Ethernet ---|192.168.3.5| ha
 
-subgraph MFD
+
+subgraph MFD["Garmin"]
 	svHARMONYINSTRUMENTS["svHARMONYINST (2.4GHz)"]
-	N2K
 end
 svHARMONYINSTRUMENTS --- ActiveCaptain
-N2K ---|N2K| SignalK
 
-Zigbee2MQTT ---|Zigbee| DimmerSwitches
-svHarmony24 ---|Wifi| LedControllers
+ha ---|zigbee| dimmers["Light Dimmers"]
+svHarmony24 ---|192.168.3.x| lights["Light Controllers"]
+
+
 ```
 
-## DHCP Status Addresses
+## DHCP
 | Device Name | Manuf | Device ID | IP | MAC | Location |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | router | Mikrotik |  | 192.168.3.1 |  | DIN |
@@ -44,4 +43,42 @@ svHarmony24 ---|Wifi| LedControllers
 | Starboard Cabin Lights | Shelly | 2CC680 (2934400) | 192.168.3.13 | 48:3F:DA:2C:C6:80 | Settee, Starboard Side |
 | Starboard Aft Lights | Shelly | D9424F (14238287) | 192.168.3.14 | 58:BF:25:D9:42:4F | Aft Cabin |
 | Salon Lights | Shelly | 16E69F (1500831) | 192.168.3.15 | 44:17:93:16:E6:9F | Salon Behind Radio |
-|  |  |  |  |  |  |
+| DHCP Pool |  |  | 192.168.3.20-254 |  |  |
+## Software
+
+```mermaid
+flowchart-elk
+
+subgraph cerbo
+	subgraph venus["Venus OS"]
+		VictronUI
+	end
+end
+Ethernet ---|192.168.3.4| cerbo
+
+
+subgraph odroid["odroid n2"]
+	subgraph haos["Home Assistant OS"]
+		subgraph ha["Home Assistant"]
+			shelly
+			LightBlueprint
+			
+		end
+	end
+end
+Ethernet ---|192.168.3.5| ha
+
+
+subgraph MFD["Garmin"]
+	N2K
+end
+svHARMONYINSTRUMENTS --- ActiveCaptain
+
+ha ---|zigbee| dimmers["Light Dimmers"]
+svHarmony24 ---|192.168.3.x| lights["Light Controllers"]
+shelly --- lights
+
+ha ---|BLE| Ruuvi
+ha ---|BLE| Govee
+
+```
