@@ -40,9 +40,9 @@ subgraph starboardhead
 	WaterHeater --- StarboardHeadFaucet --- StarboardShower
 end
 
-subgraph portbow
+subgraph portbow["Watermaker"]
 	ColdWaterManifold --- flushvalve --- carbonfilter --- watermaker
-	watermaker --- watermakeroutput
+	watermaker ---|"1/4 inch low pressure"| watermakeroutput
 end
 
 
