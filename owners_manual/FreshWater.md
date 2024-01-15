@@ -6,23 +6,44 @@ There are 2x built in water tanks located beneath the mast compression post. The
 ```mermaid
 flowchart-elk TB
 
-PortWaterTank --- WaterTankSelectValve
-StarboardWaterTank --- WaterTankSelectValve{"Tank Y Valve"}
-WaterTankSelectValve --- WaterPump
-WaterPump --- ColdWaterManifold --- WaterHeater --- HotWaterManifold
+	
+subgraph tanks
+	beptst1((BEP-TS1 PT)) --- PortWaterTank
+	beptst2((BEP-TS1 SB)) --- StarboardWaterTank
 
-ColdWaterManifold --- KitchenFaucet
-HotWaterManifold --- KitchenFaucet
+	watermakeroutput --- portvalve --- PortWaterTank
+	watermakeroutput --- starboardvalve --- StarboardWaterTank
+end
 
-KitchenFaucet --- PortHeadSink --- PortShower --- TransomShower
+subgraph galley
+	PortWaterTank --- WaterTankSelectValve
+	StarboardWaterTank --- WaterTankSelectValve{"Tank Y Valve"}
+	WaterTankSelectValve --- WaterPump
+	WaterPump --- ColdWaterManifold 
 
-ColdWaterManifold --- StarboardHeadSink
-HotWaterManifold --- StarboardHeadSink --- StarboardShower
+	ColdWaterManifold --- KitchenFaucet
+	HotWaterManifold --- KitchenFaucet
 
-BEPTS1((BEP TS1)) --- PortWaterTank
-BEPTS1 --- StarboardWaterTank
+end
 
-ColdWaterManifold --- Valve ---|"Flush"| Watermaker
+subgraph aft
+	ColdWaterManifold --- WaterHeater --- HotWaterManifold
+end
+
+subgraph porthead
+	ColdWaterManifold --- PortHeadFaucet --- PortShower --- TransomShower
+	HotWaterManifold --- PortHeadFaucet	--- PortShower --- TransomShower
+end
+
+subgraph starboardhead
+	ColdWaterManifold --- StarboardHeadFaucet --- StarboardShower
+	WaterHeater --- StarboardHeadFaucet --- StarboardShower
+end
+
+subgraph portbow
+	ColdWaterManifold --- flushvalve --- carbonfilter --- watermaker
+	watermaker --- watermakeroutput
+end
 
 
 ```
