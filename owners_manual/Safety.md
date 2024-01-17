@@ -1,6 +1,6 @@
 ## Safety
 ### Thru Hulls
-Through hulls are reinforced nylon skin fittings and ball valves by TruDesign. All skin fittings have a thickened epoxy ring surrounding the hole to protect the core. Below waterline thru hulls also have G10 reinforcement discs epoxied to the inner hull and load bearing collars to exceed the ABYC H27 standard. 
+Through hulls are reinforced nylon skin fittings and ball valves by TruDesign ^[https://www.trudesign.nz/marine]. Threads are BSPP. All skin fittings have a thickened epoxy ring surrounding the hole to protect the core. Below waterline thru hulls also have G10 reinforcement discs glued to the inner hull and load bearing collars to exceed the ABYC H27 standard. 
 ![Thru Hulls](seacocks.png)
 ### Bouyancy
 Each hull has 9 sealed compartments beneath the sole and large crash compartments in the bows to provide positive bouyancy in case of flooding. 
