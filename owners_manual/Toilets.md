@@ -10,7 +10,7 @@ Toilet --- Valve{Y Valve} ---|Tank| Tank ---|Gravity| Wye --- Seacock
 Valve ---|Overboard| Wye
 Seawater --- Pump --- Toilet
 Pumpout --- Tank
-Vent --- Tank
+Vent --- Filter --- Tank
 ```
 ### Discharge Procedure
 ```mermaid
