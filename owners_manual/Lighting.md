@@ -65,6 +65,11 @@ StarboardAftLightsLedController --- StarboardTransomCourtesyLights
 
 ```
 
-Overhead recessed lights are Hella 75mm Euro lights retrofitted with LED bulbs. The bulbs use standard G4 pin bases.
 ### Cabin Light Locations
 ![Harmony Cabin Lights](cabinlights.png) 
+
+### Recessed Light Bulbs
+Overhead recessed lights are Hella 75mm Euro lights retrofitted with LED bulbs. The bulbs use standard G4 pin bases. Many retrofit bulbs are too long. The length of the bulb needs to be < 24mm from top of the pins to the tip or 32mm LOA.
+
+
+![[Pasted image 20240117174115.png]]
