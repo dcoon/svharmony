@@ -1,7 +1,7 @@
 ## Toilets
 There are 2x Tecma Silence Compact electric macerating toilets, one in each head. They are operated by a 2 button control panel located near the toilet. Push the left button (labelled "Before") to pre fill the bowl with salt water. Push the right button (labelled "After") to flush. 
 
-A Johnson SPX pump pumps salt water into the bowl. It has a removable inlet screen that needs to be cleaned occasionally. A Jabsco Y Valve directs black water either into the holding tank or directly overboard. The holding tanks have a pumpout discharge port and air vent line plumbed through the deck. The tanks can be gravity discharged overboard via a seacock valve. 
+A Johnson SPX pump pumps salt water into the bowl. It has a removable inlet screen that needs to be cleaned occasionally. A Jabsco Y Valve directs black water either into the holding tank or directly overboard. The holding tanks have a pumpout discharge port and air vent line plumbed through the deck. The air vent has a Vetus No Smell filter^[https://webshop.vetus.com/en/product/nsf16ssmall-no-smell-filter-for-waste-tanks-for-16mm-hose]. The tanks can be gravity discharged overboard via a seacock valve. 
 
 ```mermaid
 flowchart-elk
