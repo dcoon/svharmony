@@ -40,7 +40,9 @@ Maximum Apparent Wind (AWS) Speed Rating = 20kts
 
 The furler is a ProFurl NEX 8.0 with top down furling. To prevent corrosion in the snap swivel triggers (both halyard and drum swivels), remove the yellow plastic plates, clean, and fill with Tefgel annually. The code sail halyard is green w/ black flecks. There are 2 sets of sheets and soft shackles for the clew. The spliced (continuous) furling line is tan and secured via a rolling hitch. 
 ### Reefing
-| AWS | Main | JIb | Spinn | Code 65 |
+Approximate sail plans for different wind conditions.
+
+| AWS | Main | JIb | Spin | Code 65 |
 | ---- | ---- | ---- | ---- | ---- |
 | 10 | Full | Full | Full | Full |
 | 15 | 1 | Full | Full | Full |
