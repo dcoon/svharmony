@@ -28,9 +28,9 @@ Below is a list of major repairs and upgrades to date. It does not include stand
 - 2017 - Cape Town, RSA
 	- New autopilot drive unit. Original rebuilt and kept as spare.
 - 2018 - Richard's Bay, RSA
-	- Rebuilt windlass
+	- Rebuilt windlass, sleeved worn worm gear with high grade silica bronze replacement. Inspected seals and replaced hydraulic fluid. 
 - 2018 - Knysna, RSA
-	- Replace starboard rudder
+	- Replaced starboard rudder
 - 2019 - Hauled at Royal Cape Yacht Club, Cape Town
 	- Replace starboard rudder bearings
 	- Rebed hatches
@@ -40,6 +40,12 @@ Below is a list of major repairs and upgrades to date. It does not include stand
 	- Bottom paint
 - 2020 - Washington DC
 	- Rebuild port gearbox
+	- Replaced lifelines
+	- New galley sink drain plumbing
+	- Warranty replacement Code 65
+- 2021 - Charleston, SC
+	- Serviced windlass. Inspected and replaced hydraulic fluid.
+	- Serviced bow sprit. Added reinforcement sleeve in tip, replaced stainless U bolt and dyneema.
 - 2021 - Hauled at Shearwater Marine in Ft Pierce, FL
 	- Repair hairline crack in port daggerboard trunk
 	- Repair small star crack in starboard bow
@@ -62,6 +68,7 @@ Below is a list of major repairs and upgrades to date. It does not include stand
 	- New start batteries
 	- Replaced port PSS shaft seal
 	- New engine mounts, exhaust elbows, valve adjustment, alignment
+	- New port inboard cutlass bearing
 	- New standing rigging and mast rebuild
 	- New skin fittings with reinforced hull plates and TruDesign valves
 	- New EZ2CY dodger
