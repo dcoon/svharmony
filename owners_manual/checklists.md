@@ -10,18 +10,19 @@ Before every trip
 - Crossover Switch...off
 - Visual Check...no leaks, cracked hoses, loose items
 ### Engine Start
+Starting the engines
 - Completed Checklists
 	- Engine Inspection
 - Start
 	- Key on...alarm beeping
 	- Key start...engine starts within 5 seconds
-	- Key on...engine running
+	- Key back to on...engine running
 	- Oil Alarm...beeping stops and oil light off within 10 seconds
 	- Battery Alarm...tach needle rises to 800 RPM, battery light turns off within 25 seconds
 	- Exhaust...water flowing from exhaust
 	- Shifters...shifts to foreward and neutral idle positions properly
 ### Pre Departure
-Run every trip before leaving dock or lifting anchor
+Before every trip
 - Completed Checklists
 	- Engine Inspection...complete
 	- Crew Briefing...complete
@@ -52,13 +53,19 @@ Run every trip before leaving dock or lifting anchor
 	- Reef hook...set and communicated to crew
 	- Winch handles...out
 	- Winch breaker...on
+- Steering
+	- Wheel...turns freely hard over to hard over
+	- Autopilot...engages and turns wheel
 - Instruments
 	- Charts...on, GPS fixed
 	- VHF...16
 	- AIS...on
 	- Route...active
 	- Wind & Depth...displayed
+- Clearance
+	- Port Control...cleared
 ### Departure
+Before leaving dock or lifting anchor
 - Dock
 	- Shore power...unplugged
 	- Dock lines...clear and ready
@@ -73,13 +80,100 @@ Run every trip before leaving dock or lifting anchor
 	- Traffic...clear
 	- Captain...signal to raise anchor
 ### Post Departure
+After leaving dock or lifting anchor
 - Stern lifelines...attached
+- Front Hatches...closed
 - Dock
 	- Fenders...stowed
 	- Docklines...stowed
 - Anchor
 	- Deckwash...off
 	- Anchor & Bridle...secured
-### Arrival
+	- Anchor safety line...attached
+
+### Emergency
+- MOB
+	- Help them float!...flotation in water
+	- Mark the spot...hit MOB button on chart plotter
+	- Assign person to watch MOB
+	- Wake up everyone!
+	- Stop the boat
+	- Search and rescue pattern
+- Fire
+	- Galley
+		- Turn off gas...button on breaker panel
+		- Fire blanket...never use water on a grease fire
+		- Fire extinguisher
+	- Engine
+		- Engine fire extinguishers
+	- Battery
+		- Pull disconnect switches, if safe to do so
+		- Remove flammables (cushions, gear) 
+		- Fire extinguisher
+- Flooding
+	- Remember: the boat cannot sink
+	- Manual bilge pumps in bows
+	- Find source of water and stop it
+- Collision
+	- Is everyone OK?
+	- Assess further danger (waves, traffic, shallows, etc)
+	- Flooding?
+	- Props and rudders clear?
+	- Move to safety
+- Evacuation
+	- Triple check with captain first!
+	- Activate EPIRB
+	- Activate satellite SoS
+	- Activate VHV SoS
+	- Call Mayday on VHF...Announce GPS Location, Vessel Name, and Intention to Abandon Ship
+	- Ditch bag
+	- Move liferaft to safe, downwind location
+	- Check that everyone is ready
+	- Deploy liferaft by throwing overboard and pulling trip cord
 ### Crew Briefing
-### Safety Equipment
+Reviewed with new crew before each trip
+- Safety
+	- Stay on the boat! 
+		- Clip into the jacklines or stay in the cockpit if you're unsure
+	- PFDs required when:
+		- Alone on deck
+		- Out of the cockpit at night
+		- Rough conditions
+	- Don't hurt yourself
+		- Don't jump (off/on docks)
+		- Don't use body parts as fenders
+		- Don't release any clutch or line if you're not sure
+	- Know the location of safety equipment:
+		- PFDs
+		- Flotation
+		- EPIRB
+		- VHF
+		- First Aid Kit
+		- Fire Blanket
+		- Fire Extinguishers
+		- Flashlights
+		- Bilge Pumps
+		- Ditch Bag
+		- Life Raft
+	- Review the emergency procedures
+		- MOB
+			- Throw everything that floats into the water to help them then wake everyone up
+		- Fire
+			- 7 fire extinguishers on board
+			- Fire blanket...never use water on a grease fire
+		- Flooding
+			- We can't sink; positive bouyancy
+		- Injury
+			- First aid kit location
+- Trip Plan
+	- Weather Conditions, Route, ETA, Destination(s)
+	- Wake up the captain for:
+		- All sail changes
+		- Changes in weather conditions
+		- Close ship encountersETAETA
+		- Any questions whatsoever
+- General
+	- If something bothers you, speak up and talk it out
+	- Clean up after yourself
+	- Don't break the boat or yourself
+	- Take care of each other
