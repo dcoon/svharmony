@@ -43,4 +43,5 @@ December 12, 2023
 # Appendices
 - [DIN](DIN.md)
 - [Equipment](Equipment.md)
+- [Service Schedule](service.md)
 - [History](History.md)
