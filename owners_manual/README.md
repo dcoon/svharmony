@@ -44,4 +44,5 @@ December 12, 2023
 - [DIN](DIN.md)
 - [Equipment](Equipment.md)
 - [Service Schedule](service.md)
+- [Checklists](checklists.md)
 - [History](History.md)

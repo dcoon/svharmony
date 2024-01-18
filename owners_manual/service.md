@@ -4,11 +4,12 @@
 | ---- | ---- | ---- | ---- | ---- |
 | **Engines** |  |  |  |  |
 | - Oil | Change oil and filter | Check Level | 100 hours |  |
-| - Coolant | Flush and change | Check levels |  | 500 hours |
+| - Coolant | Flush and change | Check level |  | 500 hours |
 | - Fuel Filter | Change primary and racors | Check racor bowls for water or debris |  | X |
+| - Alternator Belt |  | Check belt tension and wear |  | Change belt |
 | - Impeller | Change impellor |  |  | X |
 | - Valves | Adjust |  |  | X |
-| - Gearbox | Change gearbox oil |  |  | 500 hours |
+| - Gearbox | Change gearbox oil |  | Check level | 500 hours |
 | - Heat Exchanger | Inspect and boil |  |  | On demand |
 | - Exhaust Elbow | Replace |  |  | Per Yanmar |
 | **Pumps** |  |  |  |  |
