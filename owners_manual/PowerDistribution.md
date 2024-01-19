@@ -105,10 +105,8 @@ The distribution panel has 44 breakers. Breakers are arranged in 3 columns, roug
 Sintered bronze bonding plates are located on the outer side of each hull. The plates are connected to the negative busbar in each engine room. The busbar, engine, shaft, and prop are electrically bonded. There are 30mm id shaft zincs on each shaft.
 
 ### Equipment Connections
-#### Ferrules
-Wires connected to DIN terminals or EuroStrips (chocolate bars) are terminated with plated ferrules. DIN terminals and EuroStrips are fitted with compression plates to relieve stress except if provided by OEM (Victron).
 #### Deutsch DT/P
-Wire to wire connections (DC only) are made with Deutsch DT or DTP connectors with the female connector on the source size and male on the equipment side. Connectors were sourced from [Deutsch Connectors](https://www.deutschconnector.com/products/deutsch_connectors/) or [Digikey](https://www.digikey.com/en/product-highlight/t/te-connectivity-deutsch-ict/dt-series-connectors).
+Wire to wire connections (DC, low current only) are made with Deutsch DT or DTP connectors with the female connector on the source size and male on the equipment side. Additional connectors can be sourced from [Deutsch Connectors](https://www.deutschconnector.com/products/deutsch_connectors/) or [Digikey](https://www.digikey.com/en/product-highlight/t/te-connectivity-deutsch-ict/dt-series-connectors).
 
 | Series | Wire Size | Amps |
 | ---- | ---- | ---- |
@@ -116,8 +114,8 @@ Wire to wire connections (DC only) are made with Deutsch DT or DTP connectors wi
 | DT | 1-2.5mm2 | 12 |
 | DTP | >= 4mm2 | 20 |
 #### Ring Terminals
-Wire to wire splices (1 to many) are made with ring terminal blocks. Low current ring terminals are Ancor insulated adhesive heat shrink and terminal blocks are Blue Seas 25xx (30A) series. Secondary fuse blocks (which use ring terminals) are Blue Sea Systems ST Blade series. High current ring terminals are Ancor uninsulated.
+Wire to wire splices (1 to many) are made with ring terminal blocks. Low current ring terminals are Ancor insulated with adhesive heat shrink and terminal blocks are Blue Seas 25xx (30A) series. Secondary fuse blocks (which use ring terminals) are Blue Sea Systems ST Blade series. High current ring terminals are Ancor uninsulated with adhesive heat shrink sleeves added.
 #### Anderson PowerPole
-The connection between the Garmin ECM to Octopus LAM drive unit is made with Anderson PowerPole PP45 connectors in a 4x weatherproof boot to accommodate higher current (40A). Both the primary and spare drive units are wired identically to make it easy to swap. PP45 connectors and boot were sourced from [Powerwerx](https://powerwerx.com/anderson-powerpole-colored-housings)
+The connection from the Garmin ECU and the Octopus LAM drive unit is made with Anderson PowerPole PP45 connectors in a 4x weatherproof boot to accommodate higher current (40A). Both the primary and spare drive units are wired identically to make it easy to swap. PP45 connectors and boot were sourced from [Powerwerx](https://powerwerx.com/anderson-powerpole-colored-housings)
 
 
