@@ -103,3 +103,21 @@ The distribution panel has 44 breakers. Breakers are arranged in 3 columns, roug
 
 ### Bonding
 Sintered bronze bonding plates are located on the outer side of each hull. The plates are connected to the negative busbar in each engine room. The busbar, engine, shaft, and prop are electrically bonded. There are 30mm id shaft zincs on each shaft.
+
+### Equipment Connections
+#### Ferrules
+Wires connected to DIN terminals or EuroStrips (chocolate bars) are terminated with plated ferrules. DIN terminals and EuroStrips are fitted with compression plates to relieve stress except if provided by OEM (Victron).
+#### Deutsch DT/P
+Wire to wire connections (DC only) are made with Deutsch DT/P connectors with the female connector on the source size and male on the equipment side.
+
+| Series | Wire Size | Amps |
+| ---- | ---- | ---- |
+| DTM | < 1mm2 | ? |
+| DT | 1-2.5mm2 | 12 |
+| DTP | >= 4mm2 | 20 |
+#### Ring Terminals
+Wire to wire splices (1 to many) are made with ring terminal blocks. Ring terminals are Ancor adhesive heat shrink and terminal blocks are Blue Seas 25xx (30A) series.
+#### Anderson PowerPole
+
+
+
